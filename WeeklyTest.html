@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Library system for books and registration form">
+        <meta name="description" content="Brwose through variety of books by popular authors and register yourself">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>
+        Library System
+    </title>
+    <style>
+        table,td,th{
+            border-style: double;
+        } 
+    </style>
+
+    <link rel="stylesheet" >
+    </head>
+    <body>
+
+        <header >
+            <nav class="navbar">
+              <div class="logo">
+                <p>Library System</p>
+              </div>
+      
+              <div class="list">
+                <ul class="list-items">
+                  <li><a href="#books">Books</a></li>
+                  <li><a href="#register">Register</a></li>
+                  <li>Contact Us</li>
+                  <li>Logout</li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          
+      <main>
+         <section>
+        
+        <h1 id="books"><b>Books</b></h1>
+        
+
+        <table border="1" cellspacing="2" cellpadding="6" bordercolor="black" style="border-collapse: collapse; border-radius: 2px; " >
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Wise and Otherwise
+                    <table border="1" bordercolor="black">
+                        <tr><td>Publication Date: 01/03/2008</td></tr>
+                        <tr><td>Page Count: 108</td></tr>
+                        <tr><td>ISBN: JJGY09897</td></tr>
+                </table>
+                </td>
+                <td>Sudha Murthy</td>
+                <td>Fiction</td>         
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Palace of Illusions
+                    <table border="1" bordercolor="black">
+                        <tr><td>Publication Date: 01/03/2007</td></tr>
+                        <tr><td>Page Count: 108</td></tr>
+                        <tr><td>ISBN: JJGY09897</td></tr>
+                    </table>
+                </td>
+                <td>Chitra Banerjee</td>
+                <td>Narrative</td>         
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Alchemist
+                    <table border="1" bordercolor="black">
+                        <tr><td>Publication Date: 01/03/1009</td></tr>
+                        <tr><td>Page Count: 108</td></tr>
+                        <tr><td>ISBN: JJGY09897</td></tr>
+                    </table>
+                </td>
+                <td>Paulo Coelho</td>
+                <td>Fiction </td>         
+                <td>Not Available</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Ikigai
+                    <table border="1" bordercolor="black">
+                        <tr><td>Publication Date: 01/03/2010</td></tr>
+                        <tr><td>Page Count: 108</td></tr>
+                        <tr><td>ISBN: JJGY09897</td></tr>
+                        </table>
+                </td>
+                <td>Hector Garcia</td>
+                <td>Self Help Book</td>         
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>The Fault In Our Stars
+                    <table >
+                        <tr><td>Publication Date: 01/03/2008</td></tr>
+                        <tr><td>Page Count: 108</td></tr>
+                        <tr><td>ISBN: JJGY09897</td></tr>
+                    </table>
+                </td>
+                <td>John Green</td>
+                <td>Romance Novel</td>         
+                <td>Available</td>
+            </tr>
+        </tbody>
+        </table>
+
+</section>
+<section>
+
+    <h1 id="register">Register</h1>
+        <form action="#" method="post">
+            <div>
+               <div>
+              <label for="fname">First Name:</label>
+              <br />
+              <input type="text" id="fname" name="fname" required />
+            </div>
+            <br />
+
+            <div>
+              <label for="lname">Last Name:</label>
+              <br />
+              <input type="text" id="lname" name="lname" required />
+            </div>
+            <br />
+            </div>
+
+            <br>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="dob">
+                    Date of Birth:
+                </label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <br>
+            <div>
+                <label for="Age">Age:</label><br>
+                <input type="number" name="age" id="age" min="5" max="100" >
+            </div>
+
+            <br>
+            <div>
+                <label for="Password">Password:</label><br>
+                <input type="text" name="Password" id="Password">
+            </div>
+
+            <br>
+            <div>
+                <label for="Confirm Password">Confirm Password:</label><br>
+                <input type="text" name="Confirm Password" id="Confirm Password">
+            </div>
+            
+
+            <br>
+            <div>
+              <input id="register-btn" type="submit" value="Register" >
+            </div>
+        </form>
+</section>
+</main>
+        
+    </body>
+</html>
